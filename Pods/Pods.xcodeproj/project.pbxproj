@@ -1065,7 +1065,7 @@
 			};
 			name = Release;
 		};
-		504A8F36011542D06A98318FE8F92CE8 /* Release */ = {
+		5A1532E601D54C1E4F41A3EC209CBD6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 88AB49668AEFB00F98B83F048ADFE04A /* OCMock-iOS.xcconfig */;
 			buildSettings = {
@@ -1089,13 +1089,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		83D647E3BE2F7D4955460A07D1B11ED3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1129,6 +1128,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		85311E5CACFB3FE2DF6200379A5284F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88AB49668AEFB00F98B83F048ADFE04A /* OCMock-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OCMock-iOS/OCMock-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OCMock-iOS/OCMock-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OCMock-iOS/OCMock-iOS.modulemap";
+				PRODUCT_MODULE_NAME = OCMock;
+				PRODUCT_NAME = OCMock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		A01FA0479E6EF772E26B46BFD25592E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1227,37 +1258,6 @@
 			};
 			name = Release;
 		};
-		F4821581FD1C13A11D4930914C664D76 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88AB49668AEFB00F98B83F048ADFE04A /* OCMock-iOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OCMock-iOS/OCMock-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OCMock-iOS/OCMock-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OCMock-iOS/OCMock-iOS.modulemap";
-				PRODUCT_MODULE_NAME = OCMock;
-				PRODUCT_NAME = OCMock;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1273,8 +1273,8 @@
 		39293889DB6E6523ED08009ED4241D82 /* Build configuration list for PBXNativeTarget "OCMock-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F4821581FD1C13A11D4930914C664D76 /* Debug */,
-				504A8F36011542D06A98318FE8F92CE8 /* Release */,
+				5A1532E601D54C1E4F41A3EC209CBD6C /* Debug */,
+				85311E5CACFB3FE2DF6200379A5284F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

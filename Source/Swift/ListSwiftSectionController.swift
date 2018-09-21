@@ -57,7 +57,7 @@ open class ListSwiftSectionController<T: ListSwiftDiffable>: ListSectionControll
 
         public func select(
             animated: Bool = true,
-            scrollPosition: UICollectionViewScrollPosition = .centeredVertically
+            scrollPosition: UICollectionView.ScrollPosition = .centeredVertically
             ) {
             collection.selectItem(
                 at: index,

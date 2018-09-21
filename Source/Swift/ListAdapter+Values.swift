@@ -94,8 +94,8 @@ public extension ListAdapter {
     public func scroll(
         to value: ListSwiftDiffable,
         supplementaryKinds: [String]? = nil,
-        scrollDirection: UICollectionViewScrollDirection = .vertical,
-        scrollPosition: UICollectionViewScrollPosition = .centeredVertically,
+        scrollDirection: UICollectionView.ScrollDirection = .vertical,
+        scrollPosition: UICollectionView.ScrollPosition = .centeredVertically,
         animated: Bool = true
         ) {
         scroll(
