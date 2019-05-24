@@ -21,7 +21,7 @@ public extension ListAdapter {
 
      @return The unboxed value, if the `ListSectionController` is a member of the `IGListAdapter`.
      */
-    public func value(for sectionController: ListSectionController) -> ListSwiftDiffable? {
+  func value(for sectionController: ListSectionController) -> ListSwiftDiffable? {
         if let box = object(for: sectionController) {
             guard let box = box as? ListDiffableBox else {
                 fatalError("All objects used with the IGListKit+Swift extension should be boxed")
@@ -38,7 +38,7 @@ public extension ListAdapter {
 
      @return The `ListSectionController`, if the value is a member of the `IGListAdapter`.
      */
-    public func sectionController(for value: ListSwiftDiffable) -> ListSectionController? {
+  func sectionController(for value: ListSwiftDiffable) -> ListSectionController? {
         return sectionController(for: value.sectionBox)
     }
 
@@ -49,7 +49,7 @@ public extension ListAdapter {
 
      @return The section, if the value is a member of the adapter.
      */
-    public func section(for value: ListSwiftDiffable) -> Int? {
+  func section(for value: ListSwiftDiffable) -> Int? {
         let section = self.section(for: value.sectionBox)
         return section == NSNotFound ? nil : section
     }
@@ -61,7 +61,7 @@ public extension ListAdapter {
 
      @return The unboxed value if the section exists in the `IGListAdapter`.
      */
-    public func value(at section: Int) -> ListSwiftDiffable? {
+  func value(at section: Int) -> ListSwiftDiffable? {
         if let box = object(atSection: section) {
             guard let box = box as? ListDiffableBox else {
                 fatalError("All objects used with the IGListKit+Swift extension should be boxed")
@@ -78,7 +78,7 @@ public extension ListAdapter {
 
      @return All currently visible cells in the `UICollectionView`. Array is empty if no cells are visible.
      */
-    public func visibleCells(for value: ListSwiftDiffable) -> [UICollectionViewCell] {
+  func visibleCells(for value: ListSwiftDiffable) -> [UICollectionViewCell] {
         return visibleCells(for: value.sectionBox)
     }
 
@@ -91,7 +91,7 @@ public extension ListAdapter {
      @param scrollPosition The final position of the cells.
      @param animated A flag indicating if the scroll should be animated.
      */
-    public func scroll(
+  func scroll(
         to value: ListSwiftDiffable,
         supplementaryKinds: [String]? = nil,
         scrollDirection: UICollectionView.ScrollDirection = .vertical,
@@ -112,7 +112,7 @@ public extension ListAdapter {
 
      @return All unboxed values in the `IGListAdapter`.
      */
-    public var values: [ListSwiftDiffable] {
+  var values: [ListSwiftDiffable] {
         guard let objects = self.objects() as? [ListDiffableBox] else {
             fatalError("All objects used with the IGListKit+Swift extension should be boxed")
         }
@@ -124,7 +124,7 @@ public extension ListAdapter {
 
      @return All visible, unboxed values in the `IGListAdapter`.
      */
-    public var visibleValues: [ListSwiftDiffable] {
+  var visibleValues: [ListSwiftDiffable] {
         guard let visibleObjects = self.visibleObjects() as? [ListDiffableBox] else {
             fatalError("All objects used with the IGListKit+Swift extension should be boxed")
         }

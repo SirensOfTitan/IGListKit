@@ -43,7 +43,7 @@ public class ListSwiftPair {
  @return The unboxed value, if found.
  */
 public extension Optional where Wrapped == ListSwiftPair {
-    public static func pair<T>(_ value: T, _ constructor: @escaping ListSwiftPairConstructor<T>) -> ListSwiftPair? {
+  static func pair<T>(_ value: T, _ constructor: @escaping ListSwiftPairConstructor<T>) -> ListSwiftPair? {
         return ListSwiftPair.pair(value, constructor)
     }
 }

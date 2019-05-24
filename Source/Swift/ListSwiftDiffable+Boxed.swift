@@ -10,11 +10,11 @@
 // Not very clean, but it's not possible to write extensions on a composed Protocols.
 public extension ListSwiftDiffable {
 
-    public var sectionBox: ListDiffable {
+  var sectionBox: ListDiffable {
         return ListDiffableBox(value: self, boxesSectionValue: true)
     }
 
-    public var viewModelBox: ListDiffable {
+  var viewModelBox: ListDiffable {
         return ListDiffableBox(value: self, boxesSectionValue: false)
     }
 
